@@ -24,9 +24,6 @@ export default function Login() {
         // store token
         localStorage.setItem("token", data.token);
 
-        // store username
-        localStorage.setItem("user", JSON.stringify({ username }));
-
         navigate("/home");
       } else {
         alert(data.err || "Invalid credentials");
